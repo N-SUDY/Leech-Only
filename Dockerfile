@@ -1,5 +1,5 @@
 FROM breakdowns/mega-sdk-python:latest
-EXPOSE 5000
+
 RUN mkdir ./CendrawasihLeech
 RUN chmod 777 ./CendrawasihLeech
 WORKDIR /CendrawasihLeech
