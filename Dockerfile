@@ -1,5 +1,5 @@
 FROM breakdowns/mega-sdk-python:latest
-
+EXPOSE 5000
 RUN mkdir ./CendrawasihLeech
 RUN chmod 777 ./CendrawasihLeech
 WORKDIR /CendrawasihLeech
@@ -28,5 +28,5 @@ COPY . .
 COPY extract /usr/local/bin
 COPY .netrc $HOME/.netrc
 RUN touch $HOME/.netrc && chmod a-rwx,u+rw $HOME/.netrc
-EXPOSE 5000
+
 CMD ["bash","start.sh"]
